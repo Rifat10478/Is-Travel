@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="image/travel.png">
+
+    <!--font awosome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+        <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <section class="header">
+        <nav id="navBar">
+            <!--logo-->
+            <img src="image/logo-2.png" class="logo">
+            <ul class="nav-link">
+                <li><a href="index.html" class="gg">Home</a></li>
+                <li><a href="about.html" class="gg">About</a></li>
+                <li><a href="contact.html" class="gg">Contact Us</a></li>
+                <li><a href="#" class="active">FAQ</a></li>
+                
+            </ul>
+            <p id="displayTime"></p>
+            <!--Toggle-->
+            <i class="fa-solid fa-bars fr" onclick="togglebtn()"></i>
+        </nav>
+    </section>
+
+
+    <!--FAQ Section-->
+<h1 class="team-h1">FAQ</h1>
+<br>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>What documents do I need for international travel?</button>
+
+<div class="content">
+    <p>You’ll typically need a valid passport (with at least 6 months validity), a visa (depending on the destination), and possibly vaccination certificates. Always check the official embassy or consulate website of the country you’re visiting.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>How early should I arrive at the airport?</button>
+
+<div class="content">
+    <p>For domestic flights: 1.5–2 hours before departure.
+      For international flights: 3 hours before departure.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i> What’s the best way to find cheap flights?</button>
+
+<div class="content">
+    <p>
+      Use price comparison websites (like Skyscanner, Google Flights, or Kayak), book 1–3 months in advance, fly mid-week, and use incognito mode when searching.
+
+</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>What should I pack for a trip?</button>
+
+<div class="content">
+    <p>Essentials include weather-appropriate clothing, toiletries, documents (passport, visa), chargers, medications, and travel insurance info. Make a checklist based on your destination.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>Can I carry liquids in my hand luggage?</button>
+
+<div class="content">
+    <p>Yes, but only in containers of 100ml or less, and all containers must fit in a 1-liter transparent, resealable bag (for most international flights).</p>
+</div>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+      <script src="mine.js"></script>
+
+      <!--Footer-->
+      <footer>
+        <div class="foot-row">
+            <div class="foot-col">
+                <img class="pic" src="image/travel.png" alt="" >
+                <p>Join our community as we uncover the best places to stay, eat, and explore—one adventure at a time.</p>
+            </div>
+            <div class="foot-col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>ITS Holidays Ltd.</p>
+                <p>Dhaka, Bangladesh</p>
+                <p>Road No  Z3002</p>
+                <p class="email-id">explore@journeystarts.com</p>
+                <h4>+880 1912365475</h4>
+            </div>
+            <div class="foot-col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+            <div class="foot-col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form class="foot-form">
+                    <i class="fa-regular fa-envelope io"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right io"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f fab"></i>
+                    <i class="fa-brands fa-twitter  fab"></i>
+                    <i class="fa-brands fa-linkedin-in  fab"></i>
+                    <i class="fa-brands fa-github  fab"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Islamul &copy; 2025 - All Rights Reserved</p>
+    </footer>
+
+
+
+
+  
+    <!--java script for navbar responsive-->
+    <script>
+        let navBar = document.getElementById('navBar')
+
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+
+
+       /*FAQ*/
+       var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function(){
+          this.classList.toggle("activefaq");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+              content.style.maxHeight = null;
+          } else{
+              content.style.maxHeight = content.scrollHeight + "px"
+          }
+      });
+  }
+
+    </script>
+
+
+
+  <!--Boostrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

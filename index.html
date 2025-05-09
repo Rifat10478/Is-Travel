@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Travel</title>
+    <link rel="icon" type="image/png" href="image/travel.png">
+
+    <!--font awosome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+        <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <section class="header">
+        <nav id="navBar">
+            <!--logo-->
+            <img src="image/logo-2.png" class="logo">
+            <ul class="nav-link">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html" class="gg">About</a></li>
+                <li><a href="contact.html" class="gg">Contact Us</a></li>
+                <li><a href="faq.html" class="gg">FAQ</a></li>
+            </ul>
+            <p id="displayTime"></p>
+            <!--Toggle-->
+
+            <i class="fa-solid fa-bars fr" onclick="togglebtn()"></i>
+        </nav>
+    </section>
+
+
+
+    <!--Carousel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/banner.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/baner-2.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/baner-3.png" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+    
+    
+      <!--Card Section-->
+      <div class="card-container">
+        <h1 class="card-container-title">Exclusive Travel Place</h1>
+        <div class="card-contant-manu">
+            <div class="card-contant-list">
+                <img src="image/img 1.png" alt="">
+                <div class="card-container-info">
+                    <h2>Cox's Baza </h2>
+                    <div class="contant-para">
+                    <p class="card-item">Low(৳4,500-৳5,000)</p>
+                    <p class="card-item">Mid(৳5,500-৳6,000 )</p>
+                    <p class="card-item">High(৳7,000-৳8,000)</p>
+                    </div>
+                    <div class="ble"></div>
+                </div>
+            </div>
+
+            <div class="card-contant-list">
+                <img src="image/img 10.png" alt="">
+                <div class="card-container-info">
+                    <h2>Ramna Park</h2>
+                    <div class="contant-para">
+                    <p class="card-item">Low(৳3,500-৳4,000)</p>
+                    <p class="card-item">Mid(৳4,500-৳5,000 )</p>
+                    <p class="card-item">High(৳5,500-৳6,000)</p>
+                    </div>
+                    <div class="ble"></div>
+                </div>
+            </div>
+
+
+            <div class="card-contant-list">
+                <img src="image/img 4.png" alt="">
+                <div class="card-container-info">
+                    <h2>Lalbagh Fort</h2>
+                    <div class="contant-para">
+                      <p class="card-item">Low(৳3,500-৳4,000)</p>
+                      <p class="card-item">Mid(৳5,500-৳6,000 )</p>
+                      <p class="card-item">High(৳6,500-৳8,000)</p>
+                    </div>
+                    <div class="ble"></div>
+                </div>
+            </div>
+
+
+            <div class="card-contant-list">
+                <img src="image/img 8.png" alt="">
+                <div class="card-container-info">
+                    <h2>Sreemanga</h2>
+                    <div class="contant-para">
+                      <p class="card-item">Low(৳3,500-৳4,000)</p>
+                      <p class="card-item">Mid(৳5,000-৳6,000 )</p>
+                      <p class="card-item">High(৳6,500-৳7,000)</p>
+                    </div>
+                    <div class="ble"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+      <!--Coustomer Reviews-->
+      <section class="coustomer">
+        <h1 class="coustomer-title">
+          Our Coustomer Feedback
+        </h1>
+        <div class="reviews-card">
+          <div class="card rv1">
+            <div class="card-image">
+              <img src="image/st-1.png" width="60px" height="60px" class="imm">
+              <div class="user">
+                <h3>Jessica M.</h3>
+                <div class="reviews">
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-regular fa-star fo"></i>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-tell">
+              <p>"Absolutely incredible service! The team planned our entire Europe trip flawlessly—from flights and hotels
+                to guided tours. Everything ran smoothly, and we even got surprise upgrades! Highly recommended!"</p>
+            </div>
+          </div>
+          <div class="card rv1">
+            <div class="card-image">
+              <img src="image/st-2.png" width="60px" height="60px" class="imm">
+              <div class="user">
+                <h3>Ravi & Anika P.</h3>
+                <div class="reviews">
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-regular fa-star fo"></i>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-tell">
+              <p>"Best travel experience ever! They took care of every little detail, and it made our honeymoon in Bali
+                completely stress-free. The resort was stunning, and the itinerary was perfect for both adventure and
+                relaxation."</p>
+            </div>
+          </div>
+          <div class="card rv1">
+            <div class="card-image">
+              <img src="image/st-3.png" width="60px" height="60px" class="imm">
+              <div class="user">
+                <h3>Tom R.</h3>
+                <div class="reviews">
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-regular fa-star fo"></i>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-tell">
+              <p>"Great support and value for money. I had to reschedule last minute, and the agency handled it like pros.
+                The only reason I’m giving 4 stars instead of 5 is because one tour guide wasn’t very punctual. But overall,
+                a fantastic experience!"</p>
+            </div>
+          </div>
+          <div class="card rv1">
+            <div class="card-image">
+              <img src="image/st-4.png" width="60px" height="60px" class="imm">
+              <div class="user">
+                <h3>Sara L.</h3>
+                <div class="reviews">
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-solid fa-star fo"></i>
+                  <i class="fa-regular fa-star fo"></i>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-tell">
+              <p>"This is my third time booking with them, and they never disappoint. Friendly staff, great destination
+                knowledge, and unbeatable deals. If you're looking for a reliable travel partner, look no further!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+    
+      <!--Gallery Sextion-->
+      <section class="gallery">
+        <h1 class="gallery-title">Travel Photo Gallery</h1>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="image/t-1.png" alt="">
+            <div class="layer">
+              <h3>Khagrachari</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-2.png" alt="">
+            <div class="layer">
+              <h3>Morphogenesis</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-3.png" alt="">
+            <div class="layer">
+              <h3>Bandarban</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-4.png" alt="">
+            <div class="layer">
+              <h3>Ocean Park</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-5.png" alt="">
+            <div class="layer">
+              <h3>Sundarbans</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-6.png" alt="">
+            <div class="layer">
+              <h3>Paharpur Buddhist Monastery</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-7.png" alt="">
+            <div class="layer">
+              <h3>Rangamati</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-8.png" alt="">
+            <div class="layer">
+              <h3>Srimangal</h3>
+          </div>
+          </div>
+          <div class="gallery-item">
+            <img src="image/t-9.png" alt="">
+            <div class="layer">
+              <h3>Saint Martin's Island</h3>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!--Footer-->
+      <footer>
+        <div class="foot-row">
+            <div class="foot-col">
+                <img class="pic" src="image/travel.png" alt="" >
+                <p>Join our community as we uncover the best places to stay, eat, and explore—one adventure at a time.</p>
+            </div>
+            <div class="foot-col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>ITS Holidays Ltd.</p>
+                <p>Dhaka, Bangladesh</p>
+                <p>Road No  Z3002</p>
+                <p class="email-id">explore@journeystarts.com</p>
+                <h4>+880 1912365475</h4>
+            </div>
+            <div class="foot-col">
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+            </div>
+            <div class="foot-col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form class="foot-form">
+                    <i class="fa-regular fa-envelope io"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right io"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f fab"></i>
+                    <i class="fa-brands fa-twitter  fab"></i>
+                    <i class="fa-brands fa-linkedin-in  fab"></i>
+                    <i class="fa-brands fa-github  fab"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Islamul &copy; 2025 - All Rights Reserved</p>
+    </footer>
+
+
+
+
+  <script src="mine.js"></script>
+  
+    <!--java script for navbar responsive-->
+    <script>
+        let navBar = document.getElementById('navBar')
+
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+
+
+<!--Boostrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
